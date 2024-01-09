@@ -1,0 +1,49 @@
+main {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1440px;
+}
+/*menu*/
+.main__info {
+    width: 100%;
+    max-width:  780px;
+}
+/*paragrafo*/
+.main__info p {
+    font-size: 20px;
+    margin: 40px 0 28px; 
+}
+/*div*/
+.main__info div {
+    display: flex;
+    column-gap: 15px;
+}
+
+.main__info div a, .main__info div button {
+    width: 90%;
+    padding: 10px 0;
+    border-radius: 5px;
+
+    /* trailer e comprar ingresso*/
+    font-size: 20px;
+    font-weight:600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+
+    transform: skew(-10deg);
+}
+
+.main__info div a {
+    background: var(--red);
+}
+
+.main__info div button {
+    background: transparent;
+    border: 3px, solid var(--red);
+}

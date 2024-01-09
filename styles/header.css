@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+
+    width: 90%;
+    max-width: 1440px;
+    padding-top: 24px;
+}
+/*boné mario*/
+header img {
+    width: 80px;
+    height: auto;
+}
+/*redes sociais*/
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap:  48px; /*distancia colunas cabeçalho*/
+
+    list-style: none;
+}
+
+.navigation__link {
+    font size: 14px;
+    font width: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation__link:hover {
+    color: var(--red);
+}
+
+.navigation__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 50%;
+    height: 1px;
+    background: var(--red);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation__link:houver::after {
+    transform: scaleX();
+    transform-origin: left;
+
+}
+
+.navigation__social {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.navigation__social svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+
+    transition: all 0.4s;
+}
+
+.navigation__social svg:houver {
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
